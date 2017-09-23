@@ -1,0 +1,21 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+h1 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 60px;
+    text-align: center;
+    color: #CC9F12;
+    opacity: 0.4;
+    letter-spacing: 5px;
+}
