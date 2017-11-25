@@ -76,26 +76,144 @@ header nav ul li {
 }
 
 section.intro {
-    height: 744px;
-    background: #aeaeae;
+    background-image: url('images/gp-cover.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 818px;
+    height: 818px;
 }
 
-section.the-beer {
-    height: 744px;
-    background: #d8d8d8;
+.the-beer {
+    display: flex;
 }
 
-section.the-story {
-    height: 744px;
-    background: #202020;
+.the-beer__panel1 {
+    background-image: url('images/flavor.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    height: 800px;
+    flex-grow: 1;
 }
 
-section.contact {
-    height: 744px;
-    background: #aeaeae;
+.the-beer__panel2 {
+    background-image: url('images/abv.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    height: 800px;
+    flex-grow: 1;
+}
+
+.the-beer__panel3 {
+    background-image: url('images/aroma.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    height: 800px;
+    flex-grow: 1;
+}
+
+.about {
+    background-image: url('images/brewmaster-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    height: 800px;
+}
+
+.about__title {
+    font-family: 'DIN', sans-serif;
+	font-size: 32px;
+	font-weight: bold;
+	font-stretch: condensed;
+	line-height: 1.28;
+	letter-spacing: 10.7px;
+	text-align: left;
+	color: #ffffff;
+}
+
+.about__blurb {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 2.12;
+	text-align: left;
+	color: #b5b5b5;
+	-webkit-text-stroke: 1px #979797;
+}
+
+.about__picture {
+    background-image: url('images/cyrus-bio-pic.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    height: 800px;
+}
+
+.contact {
+    /* background-image: url('images/contact-bg.png'); */
+    background-color: #191919;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    height: 800px;
+}
+
+.contact__title {
+    font-family: 'DIN', sans-serif;
+	font-size: 110px;
+	font-weight: bold;
+	font-stretch: condensed;
+	letter-spacing: 2.8px;
+	text-align: left;
+	color: #ffffff;
 }
 
 footer {
-    height: 182px;
-    background: #202020;
+    background-color: #191919;
+    padding: 50px 100px 40px 100px
+}
+
+.government-warning {
+    width: 30%;
+    display: inline-block;
+}
+
+.copyright {
+    width: 30%;
+    display: inline-block;
+}
+
+.social-media {
+    width: 30%;
+    display: inline-block;
+}
+
+.government-warning__title, .copyright__title {
+    font-family: 'DIN', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	font-stretch: condensed;
+	letter-spacing: 0.4px;
+	text-align: left;
+	color: #ffffff;
+}
+
+.government-warning__body, .copyright__body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+	text-align: left;
+	color: #b5b5b5;
+}
+
+.fa-facebook-official, .fa-twitter, .fa-instagram {
+	opacity: 0.5;
+	color: #ffffff;
 }
