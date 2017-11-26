@@ -76,7 +76,7 @@ header nav ul li {
 }
 
 section.intro {
-    background-image: url('images/gp-cover.png');
+    background-image: url('images/gp-cover@2x.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -123,8 +123,15 @@ section.intro {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 800px;
-    height: 800px;
+    padding: 80px;
+}
+
+.about__text-container {
+    display: inline-block;
+    width: 460px;
+    margin-left: 80px;
+    padding-top: 15%;
+    vertical-align: top;
 }
 
 .about__title {
@@ -135,7 +142,8 @@ section.intro {
 	line-height: 1.28;
 	letter-spacing: 10.7px;
 	text-align: left;
-	color: #ffffff;
+    color: #ffffff;
+    margin-bottom: 10px;
 }
 
 .about__blurb {
@@ -152,8 +160,9 @@ section.intro {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 800px;
-    height: 800px;
+    height: 600px;
+    /* transform: scale(0.5); */
+    display: inline-block;
 }
 
 .contact {
@@ -162,8 +171,7 @@ section.intro {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 800px;
-    height: 800px;
+    padding: 100px;
 }
 
 .contact__title {
@@ -173,27 +181,61 @@ section.intro {
 	font-stretch: condensed;
 	letter-spacing: 2.8px;
 	text-align: left;
-	color: #ffffff;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.contact__text-container {
+    display: inline-block;
+    width: 400px;
+    margin-left: 150px;
+    /* padding-top: 15%;
+    vertical-align: top; */
+}
+
+.contact__blurb {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
+.contact__email {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 20px;
 }
 
 footer {
     background-color: #191919;
-    padding: 50px 100px 40px 100px
+    padding: 50px 100px 40px 100px;
+    position: relative;
 }
 
 .government-warning {
-    width: 30%;
+    width: 300px;
     display: inline-block;
+    margin-right: 40px;
+    vertical-align: top;
 }
 
 .copyright {
-    width: 30%;
+    width: 340px;
     display: inline-block;
+    vertical-align: top;
 }
 
 .social-media {
-    width: 30%;
+    width: 300px;
     display: inline-block;
+    text-align: right;
+    vertical-align: top;
+}
+
+.social-media i {
+    margin-left: 20px;
 }
 
 .government-warning__title, .copyright__title {
@@ -203,14 +245,16 @@ footer {
 	font-stretch: condensed;
 	letter-spacing: 0.4px;
 	text-align: left;
-	color: #ffffff;
+    color: #ffffff;
+    margin-bottom: 10px;
 }
 
 .government-warning__body, .copyright__body {
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
 	text-align: left;
-	color: #b5b5b5;
+    color: #b5b5b5;
+    line-height: 16px;
 }
 
 .fa-facebook-official, .fa-twitter, .fa-instagram {
