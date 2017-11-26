@@ -5,10 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Grand Penguin</title>
-    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+    <script src="https://use.fontawesome.com/279aaf5e48.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-    <h1>GRAND PENGUIN</h1>
+    <header>
+        <a href="#intro"><div class="logo"></div></a>
+        <nav>
+            <ul>
+                <li><a href="#the-beer">THE BEER</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro" class="intro">
+            <div class="intro__title">Coffee &amp; Cigarettes</div>
+            <div class="intro__blurb">Grand Penguin's Black IPA promises to deliver you a smokey and utterly smooth bitterness</div>
+        </section>
+        <section id="the-beer" class="the-beer">
+            <div class="the-beer__panel1">
+                <div class="the-beer__panel1__title">FLAVOR</div>
+                <div class="the-beer__panel1__divider"></div>
+                <div class="the-beer__panel1__blurb">Smooth, nicely blended bitterness, clean finish</div>
+            </div>
+            <div class="the-beer__panel2">
+                <div class="the-beer__panel2__title">ABV</div>
+                <div class="the-beer__panel2__box">
+                    <div class="the-beer__panel2__blurb">6%</div>
+                </div>
+            </div>
+            <div class="the-beer__panel3">
+                <div class="the-beer__panel3__title">AROMA</div>
+                <div class="the-beer__panel3__divider"></div>
+                <div class="the-beer__panel3__blurb">A shade of crisp coffee and smokiness</div>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <img class="about__picture" src="images/cyrus-bio-pic.png">
+            <div class="about__text-container">
+                <div class="about__title">THE BREWMASTER</div>
+                <div class="about__blurb">Born and raised in Seattle, Cyrus Shahrivar loves himself some beer and leisure. After moving to Harlem, he started brewing small delicate batches of flavorful, aromic beers that would perk the interests of even the most judgemental humans on earth - New Yorkers. Harnessing the vices and virtues of his peers and himself, Grand Penguin Beer Company was born.</div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="contact__title">Say Hello</div>
+            <div class="contact__text-container">
+                <div class="contact__blurb">Looking for information, have a special request or looking where you can find our beer? Shoot us a note.</div>
+                <a href="mailto:grandpenguinbeer@gmail.com" class="contact__email">GrandPenguinBeer@gmail.com</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="government-warning">
+            <div class="government-warning__title">GOVERNMENT WARNING</div>
+            <div class="government-warning__body">(1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems</div>
+        </div>
+        <div class="copyright">
+            <div class="copyright__title">OPERATING IN HARLEM, NEW YORK</div>
+            <div class="copyright__body">©2017 All rights reserved Grand Penguin Beer Company</div>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/grandPenguinBeer/" target="_blank"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/GPenguinBeer" target="_blank"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/grandpenguinbeer/" target="_blank"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+            <a href="https://untappd.com/GrandPenguin" target="_blank"><i class="social-media__untappd"></i></a>
+        </div>
+    </footer>
+    <script src="app.js"></script>
 </body>
 </html>
