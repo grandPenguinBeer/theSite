@@ -75,13 +75,39 @@ header nav ul li {
     display: inline-block;
 }
 
-section.intro {
+.intro {
     background-image: url('images/gp-cover@2x.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 818px;
-    height: 818px;
+    height: 600px;
+    padding: 100px;
+}
+
+.intro__title {
+    padding-top: 100px;
+    width: 590px;
+	height: 220px;
+	font-family: 'DIN', sans-serif;
+	font-size: 110px;
+	font-weight: bold;
+	font-stretch: condensed;
+	letter-spacing: 2.8px;
+	text-align: left;
+	color: #ffffff;
+    text-shadow: 0 2px 30px rgba(0, 0, 0, 0.68);
+    margin-bottom: 50px;
+}
+
+.intro__blurb {
+    width: 375px;
+	height: 90px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	line-height: 1.5;
+	text-align: left;
+	color: #ffffff;
+	text-shadow: 0 2px 30px rgba(0, 0, 0, 0.68);
 }
 
 .the-beer {
