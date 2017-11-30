@@ -103,7 +103,7 @@ header nav ul li a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 600px;
+    height: calc(100vh - 200px);
     padding: 100px;
 }
 
@@ -135,8 +135,7 @@ header nav ul li a {
 
 .the-beer {
     display: flex;
-    min-height: 800px;
-    height: 800px;
+    height: 100vh;
 }
 
 .the-beer__panel1 {
@@ -193,8 +192,9 @@ header nav ul li a {
     color: #ffffff;
 }
 
-.the-beer__panel2__title {
-    margin-top: 76px;
+.the-beer__panel1__title,
+.the-beer__panel3__title {
+    margin-top: -76px;
 }
 
 .the-beer__panel1__blurb,
@@ -246,13 +246,12 @@ header nav ul li a {
     background-repeat: no-repeat;
     padding: 80px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    height: calc(100vh - 160px);
 }
 
 .about__text-container {
     display: inline-block;
-    width: 460px;
     margin-left: 80px;
     padding-top: 15%;
     vertical-align: top;
@@ -277,7 +276,8 @@ header nav ul li a {
 	font-size: 16px;
 	line-height: 2.12;
 	text-align: left;
-	color: #b5b5b5;
+    color: #b5b5b5;
+    width: 383px;
 	-webkit-text-stroke: 1px #979797;
 }
 
@@ -287,6 +287,8 @@ header nav ul li a {
     background-repeat: no-repeat;
     height: 600px;
     display: inline-block;
+    position: relative;
+    left: 3px;
 }
 
 .contact {
@@ -295,9 +297,8 @@ header nav ul li a {
     background-position: center;
     background-repeat: no-repeat;
     padding: 100px;
-    height: 560px;
+    height: calc(100vh - 200px);
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -313,15 +314,16 @@ header nav ul li a {
 }
 
 .contact__text-container {
-    display: inline-block;
+    position: absolute;
+    right: 100px;
     width: 400px;
-    margin-left: 120px;
 }
 
 .contact__blurb {
     font-family: 'Open Sans', sans-serif;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 1.5;
 }
 
 .contact__email {
@@ -350,7 +352,7 @@ footer {
 }
 
 .copyright {
-    width: 340px;
+    width: 360px;
     display: inline-block;
     vertical-align: top;
 }
@@ -365,6 +367,20 @@ footer {
 .social-media a {
     margin-left: 20px;
     display: inline-block;
+}
+
+.social-media__untappd,
+.social-media__facebook,
+.social-media__twitter,
+.social-media__instagram {
+    height: 24px;
+    width: 24px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    top: 4px;
 }
 
 .government-warning__title, .copyright__title {
@@ -384,20 +400,4 @@ footer {
 	text-align: left;
     color: #b5b5b5;
     line-height: 16px;
-}
-
-.fa-facebook-official, .fa-twitter, .fa-instagram {
-	opacity: 0.5;
-	color: #ffffff;
-}
-
-.social-media__untappd {
-    height: 40px;
-    width: 40px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: inline-block;
-    position: relative;
-    top: 4px;
 }
