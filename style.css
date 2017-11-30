@@ -125,6 +125,7 @@ header nav ul li a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    min-height: 500px;
     height: calc(100vh - 200px);
     padding: 100px;
 }
