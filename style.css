@@ -102,6 +102,7 @@ header nav ul li a {
 @media (max-width: 1000px) {
     header {
         height: 60px;
+        background-color: black;
     }
 
     header .logo {
@@ -115,6 +116,7 @@ header nav ul li a {
     }
 
     header nav ul li {
+        font-size: 12px;
         letter-spacing: 3.6px;
     }
 }
@@ -143,7 +145,7 @@ header nav ul li a {
 }
 
 .intro__blurb {
-    width: 375px;
+    max-width: 375px;
 	height: 90px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
@@ -151,6 +153,23 @@ header nav ul li a {
 	text-align: left;
 	color: #ffffff;
 	text-shadow: 0 2px 30px rgba(0, 0, 0, 0.68);
+}
+
+@media (max-width: 1000px) {
+    .intro {
+        height: calc(100vh - 60px);
+        padding: 30px;
+    }
+
+    .intro__title {
+        padding-top: 150px;
+        font-size: 65px;
+        line-height: 1.08;
+        letter-spacing: 1.6px;
+        max-width: 315px;
+        margin-bottom: 35px;
+        height: initial;
+    }
 }
 
 .the-beer {
@@ -304,6 +323,7 @@ header nav ul li a {
         max-width: initial;
     }
 
+    .the-beer__panel1__blurb,
     .the-beer__panel3__blurb {
         padding: 0 30px 0;
     }
