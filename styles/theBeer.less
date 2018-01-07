@@ -1,0 +1,136 @@
+.the-beer {
+    display: flex;
+    height: 100vh;
+
+    &__panel1 {
+        background-position: 0;
+        border: 4px solid black;
+
+        @media (max-width: 1000px) {
+            border-top: 4px solid black;
+            border-bottom: 2px solid black
+        }
+    }
+
+    &__panel2 {
+        background-position: center;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+
+        &__box {
+            margin: 20px auto 0;
+            border: 2px dashed grey;
+            border-radius: 50%;
+            width: 175px;
+            height: 175px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__blurb {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 100px;
+            font-weight: bold;
+            font-stretch: condensed;
+            line-height: 0.77;
+            letter-spacing: 1.2px;
+            text-align: center;
+            color: #ffffff;
+            position: relative;
+            top: -6px;
+        }
+
+        @media (max-width: 1000px) {
+            border-top: 2px solid black;
+            border-bottom: 2px solid black
+        }
+    }
+
+    &__panel3 {
+        background-position: -150px;
+        border: 4px solid black;
+
+        @media (max-width: 1000px) {
+            border-top: 2px solid black;
+            border-bottom: 4px solid black
+        }
+    }
+
+    &__panel1,
+    &__panel2,
+    &__panel3 {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #191919;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 33%;
+
+        &__title {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            font-stretch: condensed;
+            line-height: 1.12;
+            letter-spacing: 10.7px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        &__blurb {
+            @media (max-width: 1000px) {
+                max-width: initial;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            width: 100%;
+            height: 320px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 0;
+        }
+    }
+
+    &__panel1,
+    &__panel3 {
+        &__title {
+            margin-top: -76px;
+
+            @media (max-width: 1000px) {
+                margin-top: 0;
+            }
+        }
+
+        &__blurb {
+            margin: 0 auto;
+            max-width: 400px;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+            font-stretch: condensed;
+            text-align: center;
+            color: #ffffff;
+
+            @media (max-width: 1000px) {
+                padding: 0 30px 0;
+            }
+        }
+
+        &__divider {
+            border-top: 2px dashed grey;
+            width: 200px;
+            margin: 20px auto;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        display: flex;
+        flex-direction: column;
+        height: initial;
+    }
+}

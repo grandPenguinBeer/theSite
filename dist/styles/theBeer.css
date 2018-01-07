@@ -1,0 +1,140 @@
+.the-beer {
+  display: flex;
+  height: 100vh;
+}
+.the-beer__panel1 {
+  background-position: 0;
+  border: 4px solid black;
+}
+@media (max-width: 1000px) {
+  .the-beer__panel1 {
+    border-top: 4px solid black;
+    border-bottom: 2px solid black;
+  }
+}
+.the-beer__panel2 {
+  background-position: center;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+.the-beer__panel2__box {
+  margin: 20px auto 0;
+  border: 2px dashed grey;
+  border-radius: 50%;
+  width: 175px;
+  height: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.the-beer__panel2__blurb {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  font-stretch: condensed;
+  line-height: 0.77;
+  letter-spacing: 1.2px;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  top: -6px;
+}
+@media (max-width: 1000px) {
+  .the-beer__panel2 {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+}
+.the-beer__panel3 {
+  background-position: -150px;
+  border: 4px solid black;
+}
+@media (max-width: 1000px) {
+  .the-beer__panel3 {
+    border-top: 2px solid black;
+    border-bottom: 4px solid black;
+  }
+}
+.the-beer__panel1,
+.the-beer__panel2,
+.the-beer__panel3 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #191919;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 33%;
+}
+.the-beer__panel1__title,
+.the-beer__panel2__title,
+.the-beer__panel3__title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: condensed;
+  line-height: 1.12;
+  letter-spacing: 10.7px;
+  text-align: center;
+  color: #ffffff;
+}
+@media (max-width: 1000px) {
+  .the-beer__panel1__blurb,
+  .the-beer__panel2__blurb,
+  .the-beer__panel3__blurb {
+    max-width: initial;
+  }
+}
+@media (max-width: 1000px) {
+  .the-beer__panel1,
+  .the-beer__panel2,
+  .the-beer__panel3 {
+    width: 100%;
+    height: 320px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 0;
+  }
+}
+.the-beer__panel1__title,
+.the-beer__panel3__title {
+  margin-top: -76px;
+}
+@media (max-width: 1000px) {
+  .the-beer__panel1__title,
+  .the-beer__panel3__title {
+    margin-top: 0;
+  }
+}
+.the-beer__panel1__blurb,
+.the-beer__panel3__blurb {
+  margin: 0 auto;
+  max-width: 400px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: condensed;
+  text-align: center;
+  color: #ffffff;
+}
+@media (max-width: 1000px) {
+  .the-beer__panel1__blurb,
+  .the-beer__panel3__blurb {
+    padding: 0 30px 0;
+  }
+}
+.the-beer__panel1__divider,
+.the-beer__panel3__divider {
+  border-top: 2px dashed grey;
+  width: 200px;
+  margin: 20px auto;
+}
+@media (max-width: 1000px) {
+  .the-beer {
+    display: flex;
+    flex-direction: column;
+    height: initial;
+  }
+}

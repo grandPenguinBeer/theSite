@@ -1,0 +1,632 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 83px;
+  background-color: transparent;
+  z-index: 10;
+  transition: background-color 0.5s ease 0.25s;
+}
+header .logo {
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 82px;
+  width: 58px;
+  position: absolute;
+  left: 100px;
+}
+@media (max-width: 1000px) {
+  header .logo {
+    left: 15px;
+    height: 60px;
+  }
+}
+header nav {
+  display: inline-block;
+  position: absolute;
+  right: 100px;
+  top: 35px;
+}
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+header nav ul li {
+  padding: 0 0 0 20px;
+  display: inline-block;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: condensed;
+  letter-spacing: 6.7px;
+  text-align: left;
+  color: #ffffff;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+@media (max-width: 1000px) {
+  header nav ul li {
+    font-size: 12px;
+    letter-spacing: 3.6px;
+  }
+}
+@media (max-width: 1000px) {
+  header nav {
+    top: 20px;
+    right: 30px;
+  }
+}
+@media (max-width: 1000px) {
+  header {
+    height: 60px;
+    background-color: black;
+  }
+}
+.intro {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  height: calc(-100vh);
+  padding: 100px;
+}
+.intro__title {
+  padding-top: 100px;
+  width: 590px;
+  height: 220px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 110px;
+  font-weight: bold;
+  font-stretch: condensed;
+  letter-spacing: 2.8px;
+  text-align: left;
+  color: #ffffff;
+  text-shadow: 0 2px 30px rgba(0, 0, 0, 0.68);
+  margin-bottom: 50px;
+}
+@media (max-width: 1000px) {
+  .intro__title {
+    padding-top: 150px;
+    font-size: 65px;
+    line-height: 1.08;
+    letter-spacing: 1.6px;
+    max-width: 315px;
+    margin-bottom: 35px;
+    height: initial;
+  }
+}
+.intro__blurb {
+  max-width: 375px;
+  height: 90px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: left;
+  color: #ffffff;
+  text-shadow: 0 2px 30px rgba(0, 0, 0, 0.68);
+}
+@media (max-width: 1000px) {
+  .intro {
+    height: calc(40vh);
+    padding: 30px;
+  }
+}
+.the-beer {
+  display: flex;
+  height: 100vh;
+}
+.the-beer__panel1 {
+  background-position: 0;
+  border: 4px solid black;
+}
+@media (max-width: 1000px) {
+  .the-beer__panel1 {
+    border-top: 4px solid black;
+    border-bottom: 2px solid black;
+  }
+}
+.the-beer__panel2 {
+  background-position: center;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+.the-beer__panel2__box {
+  margin: 20px auto 0;
+  border: 2px dashed grey;
+  border-radius: 50%;
+  width: 175px;
+  height: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.the-beer__panel2__blurb {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  font-stretch: condensed;
+  line-height: 0.77;
+  letter-spacing: 1.2px;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  top: -6px;
+}
+@media (max-width: 1000px) {
+  .the-beer__panel2 {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+}
+.the-beer__panel3 {
+  background-position: -150px;
+  border: 4px solid black;
+}
+@media (max-width: 1000px) {
+  .the-beer__panel3 {
+    border-top: 2px solid black;
+    border-bottom: 4px solid black;
+  }
+}
+.the-beer__panel1,
+.the-beer__panel2,
+.the-beer__panel3 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #191919;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 33%;
+}
+.the-beer__panel1__title,
+.the-beer__panel2__title,
+.the-beer__panel3__title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: condensed;
+  line-height: 1.12;
+  letter-spacing: 10.7px;
+  text-align: center;
+  color: #ffffff;
+}
+@media (max-width: 1000px) {
+  .the-beer__panel1__blurb,
+  .the-beer__panel2__blurb,
+  .the-beer__panel3__blurb {
+    max-width: initial;
+  }
+}
+@media (max-width: 1000px) {
+  .the-beer__panel1,
+  .the-beer__panel2,
+  .the-beer__panel3 {
+    width: 100%;
+    height: 320px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 0;
+  }
+}
+.the-beer__panel1__title,
+.the-beer__panel3__title {
+  margin-top: -76px;
+}
+@media (max-width: 1000px) {
+  .the-beer__panel1__title,
+  .the-beer__panel3__title {
+    margin-top: 0;
+  }
+}
+.the-beer__panel1__blurb,
+.the-beer__panel3__blurb {
+  margin: 0 auto;
+  max-width: 400px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: condensed;
+  text-align: center;
+  color: #ffffff;
+}
+@media (max-width: 1000px) {
+  .the-beer__panel1__blurb,
+  .the-beer__panel3__blurb {
+    padding: 0 30px 0;
+  }
+}
+.the-beer__panel1__divider,
+.the-beer__panel3__divider {
+  border-top: 2px dashed grey;
+  width: 200px;
+  margin: 20px auto;
+}
+@media (max-width: 1000px) {
+  .the-beer {
+    display: flex;
+    flex-direction: column;
+    height: initial;
+  }
+}
+.about {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px;
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 160px);
+}
+.about__text-container {
+  display: inline-block;
+  margin-left: 80px;
+  padding-top: 15%;
+  vertical-align: top;
+  position: relative;
+  top: -100px;
+}
+@media (max-width: 1000px) {
+  .about__text-container {
+    display: block;
+    margin-left: 0;
+    padding-top: 0;
+    position: initial;
+    margin-bottom: 40px;
+  }
+}
+.about__title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: condensed;
+  line-height: 1.28;
+  letter-spacing: 10.7px;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+@media (max-width: 1000px) {
+  .about__title {
+    margin-bottom: 40px;
+    font-size: 28px;
+    line-height: 1.46;
+    letter-spacing: 9.3px;
+  }
+}
+.about__blurb {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 2.12;
+  text-align: left;
+  color: #b5b5b5;
+  max-width: 383px;
+  -webkit-text-stroke: 1px #979797;
+}
+@media (max-width: 1000px) {
+  .about__blurb {
+    max-width: initial;
+  }
+}
+.about__picture {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  display: inline-block;
+  position: relative;
+  left: 3px;
+}
+@media (max-width: 1000px) {
+  .about__picture {
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    align-self: left;
+    left: -20px;
+  }
+}
+@media (max-width: 600px) {
+  .about__picture {
+    left: -12px;
+  }
+}
+@media (max-width: 1000px) {
+  .about {
+    padding: 30px;
+    height: initial;
+    flex-direction: column-reverse;
+  }
+}
+.contact {
+  background-color: #191919;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px;
+  height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+}
+.contact__title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 110px;
+  font-weight: bold;
+  font-stretch: condensed;
+  letter-spacing: 2.8px;
+  text-align: left;
+  color: #ffffff;
+  display: inline-block;
+}
+@media (max-width: 1000px) {
+  .contact__title {
+    margin-bottom: 40px;
+    font-size: 65px;
+    letter-spacing: 1.6px;
+  }
+}
+.contact__text-container {
+  position: absolute;
+  right: 100px;
+  width: 400px;
+}
+@media (max-width: 1000px) {
+  .contact__text-container {
+    position: initial;
+    display: block;
+    right: initial;
+    width: initial;
+  }
+}
+.contact__blurb {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 20px;
+  line-height: 1.5;
+}
+@media (max-width: 1000px) {
+  .contact__blurb {
+    margin-bottom: 40px;
+  }
+}
+.contact__email {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 20px;
+  display: block;
+}
+@media (max-width: 1000px) {
+  .contact__email {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1000px) {
+  .contact {
+    display: block;
+    padding: 30px;
+    height: calc(100vh - 60px);
+  }
+}
+footer {
+  background-color: #191919;
+  padding: 50px 100px 40px 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+footer .government-warning {
+  width: 300px;
+  display: inline-block;
+  margin-right: 40px;
+  vertical-align: top;
+}
+footer .copyright {
+  width: 360px;
+  display: inline-block;
+  vertical-align: top;
+}
+footer .social-media {
+  width: 300px;
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+}
+footer .social-media a {
+  margin-left: 20px;
+  display: inline-block;
+}
+@media (max-width: 1000px) {
+  footer .social-media a {
+    margin: 0 30px 0 0;
+  }
+}
+footer .social-media__untappd,
+footer .social-media__facebook,
+footer .social-media__twitter,
+footer .social-media__instagram {
+  height: 24px;
+  width: 24px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  top: 4px;
+}
+@media (max-width: 1000px) {
+  footer .social-media {
+    margin: 0;
+  }
+}
+footer .government-warning__title,
+footer .copyright__title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: condensed;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+footer .government-warning__body,
+footer .copyright__body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  text-align: left;
+  color: #b5b5b5;
+  line-height: 16px;
+}
+@media (max-width: 1000px) {
+  footer .government-warning,
+  footer .copyright,
+  footer .social-media {
+    margin: 0 0 40px 0;
+    width: 100%;
+    display: block;
+    text-align: left;
+  }
+}
+@media (max-width: 1000px) {
+  footer {
+    display: block;
+    padding: 30px;
+  }
+}
